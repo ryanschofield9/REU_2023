@@ -10,7 +10,7 @@ serialPort = serial.Serial(port = '/dev/ttyACM0', baudrate=115200,
 class ArduinoTOF1Publisher(Node):
     
     def __init__(self): 
-        super().__init__('arduino1')
+        super().__init__(node_name = 'tof_pub')
         self.publisher_ = self.create_publisher(String,'arduino1',10)
 
         # Timer
