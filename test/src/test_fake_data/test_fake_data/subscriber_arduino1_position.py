@@ -13,7 +13,6 @@ class arduino1_sub(Node):
 
     def callback_data(self, msg):
         #self.get_logger().info('I heard: "%s"' % msg.data)
-        print("HERE")
         self.get_logger().info('I heard: "%s"' %msg.data)
 
 def main(args=None):
