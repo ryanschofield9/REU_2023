@@ -1,14 +1,13 @@
 import rclpy
 from rclpy.node import Node
 
-from std_msgs.msg import String
+from std_msgs.msg import Float32, String
 
-from example_interfaces.msg import Int64, String
 
 class arduino1_sub(Node):
 
     def __init__(self):
-        super().__init__('arduino1')
+        super().__init__(node_name = 'tof_sub')
         self.subscriber_ = self.create_subscription(String, 'arduino1', self.callback_data, 10)
         self.subscriptions 
 
@@ -21,9 +20,9 @@ def main(args=None):
     rclpy.init(args=args)
 
     sub = arduino1_sub()
-    print("here")
+
     rclpy.spin(sub)
-    print("here")
+   
     rclpy.shutdown()
     
 
