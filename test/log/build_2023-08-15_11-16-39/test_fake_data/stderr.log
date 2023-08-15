@@ -1,0 +1,5 @@
+  File "/home/rodan/trial/REU_2023/test/install/test_fake_data/lib/python3.10/site-packages/test_fake_data/publisher_arduino_avg.py", line 27
+    self.get_logger().info('I heard: "%s" I Published: "%f"' %msg.data, %new_msg.data)
+                                                                        ^
+SyntaxError: invalid syntax
+

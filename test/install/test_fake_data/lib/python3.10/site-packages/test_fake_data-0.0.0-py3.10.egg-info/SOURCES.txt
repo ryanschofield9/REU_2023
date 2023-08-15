@@ -14,6 +14,7 @@ test/test_flake8.py
 test/test_pep257.py
 test_fake_data/__init__.py
 test_fake_data/publisher_arduino.py
+test_fake_data/publisher_arduino_avg.py
 test_fake_data/publisher_real_tof1_pos.py
 test_fake_data/publisher_tof1_position.py
 test_fake_data/subscriber_arduino1_position.py

@@ -25,6 +25,7 @@ setup(
         	'talker_real1 = test_fake_data.publisher_real_tof1_pos:main', 
         	'talker_arduino = test_fake_data.publisher_arduino:main', 
         	'listener_arduino = test_fake_data.subscriber_arduino1_position:main',
+        	'talker_arduino_avg = test_fake_data.publisher_arduino_avg:main', 
         ],
     },
 )
