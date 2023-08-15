@@ -1,0 +1,22 @@
+[0.397s] Invoking command in '/home/rodan/test/src/test_fake_data': PYTHONPATH=/home/rodan/test/build/test_fake_data/prefix_override:/home/rodan/test/install/test_fake_data/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/test_fake_data build --build-base /home/rodan/test/build/test_fake_data/build install --record /home/rodan/test/build/test_fake_data/install.log --single-version-externally-managed
+[0.553s] running egg_info
+[0.554s] writing ../../build/test_fake_data/test_fake_data.egg-info/PKG-INFO
+[0.554s] writing dependency_links to ../../build/test_fake_data/test_fake_data.egg-info/dependency_links.txt
+[0.554s] writing entry points to ../../build/test_fake_data/test_fake_data.egg-info/entry_points.txt
+[0.554s] writing requirements to ../../build/test_fake_data/test_fake_data.egg-info/requires.txt
+[0.554s] writing top-level names to ../../build/test_fake_data/test_fake_data.egg-info/top_level.txt
+[0.555s] reading manifest file '../../build/test_fake_data/test_fake_data.egg-info/SOURCES.txt'
+[0.555s] writing manifest file '../../build/test_fake_data/test_fake_data.egg-info/SOURCES.txt'
+[0.555s] running build
+[0.555s] running build_py
+[0.556s] running install
+[0.556s] running install_lib
+[0.556s] running install_data
+[0.557s] running install_egg_info
+[0.558s] removing '/home/rodan/test/install/test_fake_data/lib/python3.10/site-packages/test_fake_data-0.0.0-py3.10.egg-info' (and everything under it)
+[0.558s] Copying ../../build/test_fake_data/test_fake_data.egg-info to /home/rodan/test/install/test_fake_data/lib/python3.10/site-packages/test_fake_data-0.0.0-py3.10.egg-info
+[0.558s] running install_scripts
+[0.570s] Installing listener_pos1 script to /home/rodan/test/install/test_fake_data/lib/test_fake_data
+[0.570s] Installing talker_pos1 script to /home/rodan/test/install/test_fake_data/lib/test_fake_data
+[0.570s] writing list of installed files to '/home/rodan/test/build/test_fake_data/install.log'
+[0.584s] Invoked command in '/home/rodan/test/src/test_fake_data' returned '0': PYTHONPATH=/home/rodan/test/build/test_fake_data/prefix_override:/home/rodan/test/install/test_fake_data/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/test_fake_data build --build-base /home/rodan/test/build/test_fake_data/build install --record /home/rodan/test/build/test_fake_data/install.log --single-version-externally-managed

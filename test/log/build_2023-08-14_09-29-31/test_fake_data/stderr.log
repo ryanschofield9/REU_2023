@@ -1,0 +1,5 @@
+  File "/home/rodan/test/install/test_fake_data/lib/python3.10/site-packages/test_fake_data/publisher_arduino.py", line 7
+    serialPort = serial.Serial(port = "/dev/ttyACM0”, baudrate=115200,
+                                      ^
+SyntaxError: unterminated string literal (detected at line 7)
+

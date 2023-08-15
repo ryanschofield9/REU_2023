@@ -1,0 +1,31 @@
+[0.378s] Invoking command in '/home/rodan/test/src/test_fake_data': PYTHONPATH=/home/rodan/test/build/test_fake_data/prefix_override:/home/rodan/test/install/test_fake_data/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/test_fake_data build --build-base /home/rodan/test/build/test_fake_data/build install --record /home/rodan/test/build/test_fake_data/install.log --single-version-externally-managed
+[0.525s] running egg_info
+[0.525s] writing ../../build/test_fake_data/test_fake_data.egg-info/PKG-INFO
+[0.525s] writing dependency_links to ../../build/test_fake_data/test_fake_data.egg-info/dependency_links.txt
+[0.526s] writing entry points to ../../build/test_fake_data/test_fake_data.egg-info/entry_points.txt
+[0.526s] writing requirements to ../../build/test_fake_data/test_fake_data.egg-info/requires.txt
+[0.526s] writing top-level names to ../../build/test_fake_data/test_fake_data.egg-info/top_level.txt
+[0.526s] reading manifest file '../../build/test_fake_data/test_fake_data.egg-info/SOURCES.txt'
+[0.527s] writing manifest file '../../build/test_fake_data/test_fake_data.egg-info/SOURCES.txt'
+[0.527s] running build
+[0.527s] running build_py
+[0.527s] copying test_fake_data/publisher_tof1_position.py -> /home/rodan/test/build/test_fake_data/build/lib/test_fake_data
+[0.527s] copying test_fake_data/publisher_arduino.py -> /home/rodan/test/build/test_fake_data/build/lib/test_fake_data
+[0.527s] running install
+[0.528s] running install_lib
+[0.528s] copying /home/rodan/test/build/test_fake_data/build/lib/test_fake_data/publisher_tof1_position.py -> /home/rodan/test/install/test_fake_data/lib/python3.10/site-packages/test_fake_data
+[0.528s] copying /home/rodan/test/build/test_fake_data/build/lib/test_fake_data/publisher_arduino.py -> /home/rodan/test/install/test_fake_data/lib/python3.10/site-packages/test_fake_data
+[0.528s] byte-compiling /home/rodan/test/install/test_fake_data/lib/python3.10/site-packages/test_fake_data/publisher_tof1_position.py to publisher_tof1_position.cpython-310.pyc
+[0.529s] byte-compiling /home/rodan/test/install/test_fake_data/lib/python3.10/site-packages/test_fake_data/publisher_arduino.py to publisher_arduino.cpython-310.pyc
+[0.529s] running install_data
+[0.529s] running install_egg_info
+[0.530s] removing '/home/rodan/test/install/test_fake_data/lib/python3.10/site-packages/test_fake_data-0.0.0-py3.10.egg-info' (and everything under it)
+[0.530s] Copying ../../build/test_fake_data/test_fake_data.egg-info to /home/rodan/test/install/test_fake_data/lib/python3.10/site-packages/test_fake_data-0.0.0-py3.10.egg-info
+[0.531s] running install_scripts
+[0.542s] Installing listener_arduino script to /home/rodan/test/install/test_fake_data/lib/test_fake_data
+[0.542s] Installing listener_pos1 script to /home/rodan/test/install/test_fake_data/lib/test_fake_data
+[0.542s] Installing talker_arduino script to /home/rodan/test/install/test_fake_data/lib/test_fake_data
+[0.543s] Installing talker_pos1 script to /home/rodan/test/install/test_fake_data/lib/test_fake_data
+[0.543s] Installing talker_real1 script to /home/rodan/test/install/test_fake_data/lib/test_fake_data
+[0.543s] writing list of installed files to '/home/rodan/test/build/test_fake_data/install.log'
+[0.556s] Invoked command in '/home/rodan/test/src/test_fake_data' returned '0': PYTHONPATH=/home/rodan/test/build/test_fake_data/prefix_override:/home/rodan/test/install/test_fake_data/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/test_fake_data build --build-base /home/rodan/test/build/test_fake_data/build install --record /home/rodan/test/build/test_fake_data/install.log --single-version-externally-managed

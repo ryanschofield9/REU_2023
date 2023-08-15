@@ -1,0 +1,26 @@
+[0.371s] Invoking command in '/home/rodan/test/src/test_fake_data': PYTHONPATH=/home/rodan/test/build/test_fake_data/prefix_override:/home/rodan/test/install/test_fake_data/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/test_fake_data build --build-base /home/rodan/test/build/test_fake_data/build install --record /home/rodan/test/build/test_fake_data/install.log --single-version-externally-managed
+[0.516s] running egg_info
+[0.516s] writing ../../build/test_fake_data/test_fake_data.egg-info/PKG-INFO
+[0.516s] writing dependency_links to ../../build/test_fake_data/test_fake_data.egg-info/dependency_links.txt
+[0.516s] writing entry points to ../../build/test_fake_data/test_fake_data.egg-info/entry_points.txt
+[0.516s] writing requirements to ../../build/test_fake_data/test_fake_data.egg-info/requires.txt
+[0.516s] writing top-level names to ../../build/test_fake_data/test_fake_data.egg-info/top_level.txt
+[0.517s] reading manifest file '../../build/test_fake_data/test_fake_data.egg-info/SOURCES.txt'
+[0.518s] writing manifest file '../../build/test_fake_data/test_fake_data.egg-info/SOURCES.txt'
+[0.518s] running build
+[0.518s] running build_py
+[0.518s] copying test_fake_data/subscriber_tof1_position.py -> /home/rodan/test/build/test_fake_data/build/lib/test_fake_data
+[0.518s] copying test_fake_data/publisher_tof1_position.py -> /home/rodan/test/build/test_fake_data/build/lib/test_fake_data
+[0.518s] running install
+[0.518s] running install_lib
+[0.518s] copying /home/rodan/test/build/test_fake_data/build/lib/test_fake_data/subscriber_tof1_position.py -> /home/rodan/test/install/test_fake_data/lib/python3.10/site-packages/test_fake_data
+[0.519s] copying /home/rodan/test/build/test_fake_data/build/lib/test_fake_data/publisher_tof1_position.py -> /home/rodan/test/install/test_fake_data/lib/python3.10/site-packages/test_fake_data
+[0.519s] byte-compiling /home/rodan/test/install/test_fake_data/lib/python3.10/site-packages/test_fake_data/subscriber_tof1_position.py to subscriber_tof1_position.cpython-310.pyc
+[0.519s] byte-compiling /home/rodan/test/install/test_fake_data/lib/python3.10/site-packages/test_fake_data/publisher_tof1_position.py to publisher_tof1_position.cpython-310.pyc
+[0.519s] running install_data
+[0.519s] running install_egg_info
+[0.520s] removing '/home/rodan/test/install/test_fake_data/lib/python3.10/site-packages/test_fake_data-0.0.0-py3.10.egg-info' (and everything under it)
+[0.520s] Copying ../../build/test_fake_data/test_fake_data.egg-info to /home/rodan/test/install/test_fake_data/lib/python3.10/site-packages/test_fake_data-0.0.0-py3.10.egg-info
+[0.521s] running install_scripts
+[0.532s] writing list of installed files to '/home/rodan/test/build/test_fake_data/install.log'
+[0.546s] Invoked command in '/home/rodan/test/src/test_fake_data' returned '0': PYTHONPATH=/home/rodan/test/build/test_fake_data/prefix_override:/home/rodan/test/install/test_fake_data/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/test_fake_data build --build-base /home/rodan/test/build/test_fake_data/build install --record /home/rodan/test/build/test_fake_data/install.log --single-version-externally-managed
