@@ -40,7 +40,11 @@ class arduino1_avg(Node):
         
         new_msg.data = holder 
         self.publisher_.publish(new_msg)
+<<<<<<< HEAD
         self.get_logger().info(f"I heard: {msg.data} Published {new_msg.data}")
+=======
+        self.get_logger().info(f"I heard: {msg.data} Published {new_msg.data}" )
+>>>>>>> 1f215c3ab4e0fad7a1c66746d9d30e5bd4a15d4c
         
 
 def main(args=None):
