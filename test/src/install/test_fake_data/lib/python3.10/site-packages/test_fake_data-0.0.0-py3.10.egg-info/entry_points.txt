@@ -1,5 +1,0 @@
-[console_scripts]
-listener_pos1 = test_fake_data.subscriber_tof1_position:main
-talker_pos1 = test_fake_data.publisher_tof1_position:main
-talker_real1 = test_fake_data.publisher_real_tof1_pos:main
-

@@ -1,5 +1,0 @@
-  File "/home/rodan/trial/REU_2023/test/install/test_fake_data/lib/python3.10/site-packages/test_fake_data/publisher_arduino_avg.py", line 22
-    else 
-         ^
-SyntaxError: expected ':'
-

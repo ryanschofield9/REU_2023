@@ -1,5 +1,0 @@
-  File "/home/rodan/test/install/test_fake_data/lib/python3.10/site-packages/test_fake_data/subscriber_tof1_branch_relation.py", line 10
-    Int64 branch_low = 200
-          ^^^^^^^^^^
-SyntaxError: invalid syntax
-

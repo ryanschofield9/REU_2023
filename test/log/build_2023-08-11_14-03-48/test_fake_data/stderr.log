@@ -1,5 +1,0 @@
-  File "/home/rodan/test/install/test_fake_data/lib/python3.10/site-packages/test_fake_data/publisher_real_tof1_pos.py", line 19
-    int32 val = 5
-          ^^^
-SyntaxError: invalid syntax
-
