@@ -27,6 +27,7 @@ setup(
             'talker_arduino_avg = test_tof_branch.publisher_arduino_avg:main', 
             'talker_rob_cart = test_tof_branch.publisher_robot_cart:main', 
             'down = test_tof_branch.moving_down_looking_for_branch:main', 
+            'rot_z = test_tof_branch.rotating_z_looking_for_branch:main',
         ],
     },
 )

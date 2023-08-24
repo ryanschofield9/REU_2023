@@ -29,8 +29,8 @@ class rob_move_down(Node):
         #negative y makes it go up
         if (self.looking == True): 
             
-            my_twist_linear = [0.0, 0.05, 0.0]
-            my_twist_angular = [0.0, 0.0, 0.0]
+            my_twist_linear = [0.0, 0.0, 0.0]
+            my_twist_angular = [0.0, 0.0, 0.05]
             
             #self.get_logger().info(f"looking")
         elif (self.looking == False): 
