@@ -12,7 +12,7 @@ sudo chmod 777 /dev/ttyACM0
 3. Download test_tof_branch folder into a src folder 
 
 4. Start the UR5e in Rviz
-     Run the following commands in seperate terminal (make sure to source ros2 in each tutorial.
+     Run the following commands in seperate terminal (make sure to source ros2 in each terminal)
 ```
 ros2 launch ur_robot_driver ur5e.launch.py robot_ip:=10.10.10.10 use_fake_hardware:=true
 ```
@@ -33,7 +33,6 @@ ros2 service call /servo_node/start_servo std_srvs/srv/Trigger
 ```
 ros2 run test_tof_branch talker_arduino
 ```
-<<<<<<< HEAD
 9. Use the following command in a new terminal start reading the arduino average 
 ```
 ros2 run test_tof_branch talker_arduino_avg
