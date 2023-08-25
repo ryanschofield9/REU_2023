@@ -21,7 +21,7 @@ Project worked on during the REU program in 2023. Using ros2, control a pruning 
 ```  
 5. In the rviz window move the robot to a sutable starting position
    
-6. Switch to the forward_position_controller using the following command
+6. Use the following command in a new terminal to switch to the forward_position_controller 
 ```
      ros2 control switch_controllers --activate forward_position_controller --deactivate scaled_joint_trajectory_controller
 ```
@@ -29,15 +29,15 @@ Project worked on during the REU program in 2023. Using ros2, control a pruning 
 ```
     ros2 service call /servo_node/start_servo std_srvs/srv/Trigger
 ```
-8. Use the following command start reading the arduino code
+8. Use the following command in a new terminal start reading the arduino code 
 ```
     ros2 run test_tof_branch talker_arduino
 ```
-9. Use the following command start reading the arduino average 
+9. Use the following command in the new terminal start reading the arduino average 
 ```
     ros2 run test_tof_branch talker_arduino_avg
 ```
-10. Use the following command to test the robots ability to move down with the arduino in control 
+10. Use the following command in the new terminal to test the robots ability to move down with the arduino in control 
 ```
     ros2 run test_tof_branch down  
 ```
