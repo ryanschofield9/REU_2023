@@ -33,6 +33,7 @@ ros2 service call /servo_node/start_servo std_srvs/srv/Trigger
 ```
 ros2 run test_tof_branch talker_arduino
 ```
+<<<<<<< HEAD
 9. Use the following command in a new terminal start reading the arduino average 
 ```
 ros2 run test_tof_branch talker_arduino_avg
@@ -59,5 +60,4 @@ ros2 run test_tof_branch forward
 ```
 ros2 run test_tof_branch move
 ```
-       
 
