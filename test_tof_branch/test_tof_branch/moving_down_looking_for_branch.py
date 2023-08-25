@@ -1,4 +1,5 @@
 import rclpy
+
 from rclpy.node import Node
 
 from std_msgs.msg import String, Float32
@@ -17,7 +18,7 @@ class rob_move_down(Node):
         self.subscriptions 
         self.i = 0
         self.avg = 0.0; 
-        self.looking = True 
+        self.step1 = True 
         self.stop = False
 
     
@@ -27,13 +28,13 @@ class rob_move_down(Node):
 
         # positive y makes it go down 
         #negative y makes it go up
-        if (self.looking == True): 
+        if (self.step1 == True): 
             
             my_twist_linear = [0.0, 0.05, 0.0]
             my_twist_angular = [0.0, 0.0, 0.0]
             
             #self.get_logger().info(f"looking")
-        elif (self.looking == False): 
+        elif (self.step1 == False): 
             
             my_twist_linear = [0.0, 0.0, 0.0]
             my_twist_angular = [0.0, 0.0, 0.0]
@@ -58,11 +59,11 @@ class rob_move_down(Node):
             if (abs(self.avg - msg.data) < 20.0):
                 #self.get_logger().info(f"Sending: {abs(self.avg-msg.data)}")
                 self.avg = msg.data
-                self.looing = True
+
             else:
                 #self.get_logger().info(f"Here: {abs(self.avg-msg.data)}")
                 self.avg = msg.data
-                self.looking = False 
+                self.step1 = False 
                 self.stop = True
 
 def main(args=None):

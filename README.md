@@ -3,42 +3,61 @@ Project worked on during the REU program in 2023. Using ros2, control a pruning 
 
 # How to run test_tof_branch
 
-1. Download test_tof_branch folder into a src folder 
+1. Plug arduino into computer (arduino must be loaded with the tof code provided)
+  
+2. Use the following command to allow ros to see the arduino
+```
+sudo chmod 777 /dev/ttyACM0
+```
+3. Download test_tof_branch folder into a src folder 
 
-2. Start the UR5e in Rviz
+4. Start the UR5e in Rviz
      Run the following commands in seperate terminal (make sure to source ros2 in each tutorial.
 ```
-       ros2 launch ur_robot_driver ur5e.launch.py robot_ip:=10.10.10.10 use_fake_hardware:=true
+ros2 launch ur_robot_driver ur5e.launch.py robot_ip:=10.10.10.10 use_fake_hardware:=true
 ```
 ```
-       ros2 launch ur_moveit_config ur_moveit.launch.py ur_type:=ur5e
+ros2 launch ur_moveit_config ur_moveit.launch.py ur_type:=ur5e
 ```  
-3. In the rviz window move the robot to a sutable starting position
+5. In the rviz window move the robot to a sutable starting position
    
-4. Switch to the forward_position_controller using the following command
+6. Use the following command in a new terminal to switch to the forward_position_controller 
 ```
-     ros2 control switch_controllers --activate forward_position_controller --deactivate scaled_joint_trajectory_controller
+ros2 control switch_controllers --activate forward_position_controller --deactivate scaled_joint_trajectory_controller
 ```
-5. Use the following command to start the servos
+7. Use the following command to start the servos
 ```
-    ros2 service call /servo_node/start_servo std_srvs/srv/Trigger
+ros2 service call /servo_node/start_servo std_srvs/srv/Trigger
 ```
-6. Plug arduino into computer (arduino must be loaded with the tof code provided)
-  
-7. Use the following command to allow ros to see the arduino
+8. Use the following command in a new terminal start reading the arduino code 
 ```
-    sudo chmod 777 /dev/ttyACM0
+ros2 run test_tof_branch talker_arduino
 ```
-8. Use the following command start reading the arduino code
+9. Use the following command in a new terminal start reading the arduino average 
 ```
-    ros2 run test_tof_branch talker_arduino
+ros2 run test_tof_branch talker_arduino_avg
 ```
-9. Use the following command start reading the arduino average 
+10. Use the following command in a new terminal to test the movements (optional)
+
+down: 
 ```
-    ros2 run test_tof_branch talker_arduino_avg
+ros2 run test_tof_branch down
 ```
-10. Use the following command start the movement of the robot
+rotation around z axis: 
 ```
-    ros2 run test_tof_branch down  
+ros2 run test_tof_branch rot_z
+```
+rotation around the y axis: 
+```
+ros2 run test_tof_branch rot_y
+```
+forward: 
+```
+ros2 run test_tof_branch forward
+```
+11. Use the following command in a new terminal to test a combination of the movements (optional) 
+```
+ros2 run test_tof_branch move
 ```
        
+

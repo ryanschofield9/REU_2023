@@ -8,17 +8,17 @@ from example_interfaces.msg import Int64
 
 from geometry_msgs.msg import TwistStamped, Vector3
 
-class rob_rot_z(Node):
+class rob_rot_y(Node):
 
     def __init__(self): 
-        super().__init__('rot_z')
+        super().__init__('rot_y')
         self.pub = self.create_publisher(TwistStamped, '/servo_node/delta_twist_cmds', 10)
         self.pub_timer = self.create_timer(1/10, self.publish_twist)
         self.subscriber_ = self.create_subscription(Float32,'arduino1avg',self.avg_callback, 10)
         self.subscriptions 
         self.i = 0
         self.avg = 0.0; 
-        self.step2 = True 
+        self.step3 = True 
         self.stop = False
 
     
@@ -28,13 +28,13 @@ class rob_rot_z(Node):
 
         # positive y makes it go down 
         #negative y makes it go up
-        if (self.step2 == True): 
+        if (self.step3 == True): 
             
             my_twist_linear = [0.0, 0.0, 0.0]
-            my_twist_angular = [0.0, 0.0, 0.5]
+            my_twist_angular = [0.0, 0.5, 0.0]
             
             #self.get_logger().info(f"looking")
-        elif (self.step2 == False): 
+        elif (self.step3 == False): 
             
             my_twist_linear = [0.0, 0.0, 0.0]
             my_twist_angular = [0.0, 0.0, 0.0]
@@ -59,19 +59,19 @@ class rob_rot_z(Node):
             if (abs(self.avg - msg.data) < 20.0):
                 #self.get_logger().info(f"Sending: {abs(self.avg-msg.data)}")
                 self.avg = msg.data
-                
+
             else:
                 #self.get_logger().info(f"Here: {abs(self.avg-msg.data)}")
                 self.avg = msg.data
-                self.step2 = False 
+                self.step3 = False 
                 self.stop = True
 
 def main(args=None):
     rclpy.init(args=args)
     
-    rot_z = rob_rot_z()
+    rot_y = rob_rot_y()
     
-    rclpy.spin(rot_z)
+    rclpy.spin(rot_y)
     
     rclpy.shutdown()
 

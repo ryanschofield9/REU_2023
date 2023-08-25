@@ -16,7 +16,7 @@ class rob_cart_publisher(Node):
 
     
     def publish_twist(self):
-        my_twist = [0.0, -0.05, 0.0] 
+        my_twist = [0.0, -0.1, 0.0] 
 
         # linear 
 
