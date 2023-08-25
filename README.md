@@ -39,6 +39,6 @@ ros2 run test_tof_branch talker_arduino_avg
 ```
 10. Use the following command in the new terminal to test the robots ability to move down with the arduino in control 
 ```
-ros2 run test_tof_branch down  
+ros2 run test_tof_branch down
 ```
        
