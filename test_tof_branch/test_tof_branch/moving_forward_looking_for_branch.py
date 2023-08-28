@@ -8,7 +8,7 @@ from example_interfaces.msg import Int64
 
 from geometry_msgs.msg import TwistStamped, Vector3
 
-class rob_moving_forward(Node):
+class RobMovingForward(Node):
 
     def __init__(self): 
         super().__init__('move_forward')
@@ -70,7 +70,7 @@ class rob_moving_forward(Node):
 def main(args=None):
     rclpy.init(args=args)
     
-    forward = rob_moving_forward()
+    forward = RobMovingForward()
     
     rclpy.spin(forward)
     

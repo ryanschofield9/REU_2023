@@ -7,7 +7,7 @@ from example_interfaces.msg import Int64
 
 from geometry_msgs.msg import TwistStamped, Vector3
 
-class rob_cart_publisher(Node):
+class RobCartPublisher(Node):
 
     def __init__(self): 
         super().__init__('rob_cart_pub')
@@ -31,7 +31,7 @@ class rob_cart_publisher(Node):
         cmd.header.frame_id = 'tool0'
         cmd.header.stamp = self.get_clock().now().to_msg()
         cmd.twist.linear = Vector3(x=my_twist[0], y=my_twist[1], z=my_twist[2])
-        cmd.twist.angular = Vector3(x=0.0, y=0.0, z=0.0)
+        cmd.twist.angular = Vector3(x=0.0, y=0.0, z=-0.0)
         self.get_logger().info(f"Sending: {cmd.twist.linear}")
 
         self.pub.publish(cmd)
@@ -41,7 +41,7 @@ class rob_cart_publisher(Node):
 def main(args=None):
     rclpy.init(args=args)
 
-    rob_cart = rob_cart_publisher()
+    rob_cart = RobCartPublisher()
 
     rclpy.spin(rob_cart)
 

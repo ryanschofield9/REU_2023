@@ -4,7 +4,7 @@ from rclpy.node import Node
 from std_msgs.msg import Float32, String
 
 
-class arduino1_sub(Node):
+class Arduino1Sub(Node):
 
     def __init__(self):
         super().__init__(node_name = 'tof_sub')
@@ -18,7 +18,7 @@ class arduino1_sub(Node):
 def main(args=None):
     rclpy.init(args=args)
 
-    sub = arduino1_sub()
+    sub = Arduino1Sub()
 
     rclpy.spin(sub)
    

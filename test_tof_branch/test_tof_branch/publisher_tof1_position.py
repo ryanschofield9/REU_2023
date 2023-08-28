@@ -5,7 +5,7 @@ from std_msgs.msg import String
 
 from example_interfaces.msg import Int64
 
-class tof1_position_pub(Node):
+class TOF1PositionPub(Node):
 
     def __init__(self): 
         super().__init__('tof1_position_pub')
@@ -25,7 +25,7 @@ class tof1_position_pub(Node):
 def main(args=None):
     rclpy.init(args=args)
 
-    tof1_pos = tof1_position_pub()
+    tof1_pos = TOF1PositionPub()
 
     rclpy.spin(tof1_pos)
 

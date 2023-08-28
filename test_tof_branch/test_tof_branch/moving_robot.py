@@ -10,7 +10,7 @@ from geometry_msgs.msg import TwistStamped, Vector3
 
 import time 
 
-class rob_move(Node):
+class RobMove(Node):
 
     def __init__(self): 
         super().__init__('move')
@@ -134,7 +134,7 @@ class rob_move(Node):
 def main(args=None):
     rclpy.init(args=args)
     
-    move = rob_move()
+    move = RobMove()
     
     rclpy.spin(move)
     

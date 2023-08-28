@@ -5,7 +5,7 @@ from std_msgs.msg import Float32, String
 
 from collections import deque
 
-class arduino1_avg(Node):
+class Arduino1Avg(Node):
 
     def __init__(self):
         super().__init__(node_name = 'tof_avg')
@@ -46,7 +46,7 @@ class arduino1_avg(Node):
 def main(args=None):
     rclpy.init(args=args)
 
-    avg = arduino1_avg()
+    avg = Arduino1Avg()
 
     rclpy.spin(avg)
    
