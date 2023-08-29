@@ -33,30 +33,10 @@ ros2 service call /servo_node/start_servo std_srvs/srv/Trigger
 ```
 ros2 run test_tof_branch talker_arduino
 ```
-9. Use the following command in a new terminal start reading the arduino average 
+9. Run the following command to run the movement controll 
+ 
 ```
-ros2 run test_tof_branch talker_arduino_avg
+ros2 run test_tof_branch move2
 ```
-10. Use the following command in a new terminal to test the movements (optional)
 
-down: 
-```
-ros2 run test_tof_branch down
-```
-rotation around z axis: 
-```
-ros2 run test_tof_branch rot_z
-```
-rotation around the y axis: 
-```
-ros2 run test_tof_branch rot_y
-```
-forward: 
-```
-ros2 run test_tof_branch forward
-```
-11. Use the following command in a new terminal to test a combination of the movements (optional) 
-```
-ros2 run test_tof_branch move
-```
 
