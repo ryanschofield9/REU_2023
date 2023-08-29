@@ -29,11 +29,11 @@ ros2 control switch_controllers --activate forward_position_controller --deactiv
 ```
 ros2 service call /servo_node/start_servo std_srvs/srv/Trigger
 ```
-8. Use the following command in a new terminal start reading the arduino code 
+8. Go into the ros_ws folder and use the following command in a new terminal to start reading the arduino code 
 ```
 ros2 run test_tof_branch talker_arduino
 ```
-9. Run the following command to run the movement controll 
+9. Go into the ros_ws foler and use the following command in a new terminal to run the movement controll 
  
 ```
 ros2 run test_tof_branch move2
