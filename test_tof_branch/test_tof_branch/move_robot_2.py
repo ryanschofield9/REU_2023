@@ -54,9 +54,9 @@ class RobMove(Node):
                 
                 my_twist_linear = [0.0, 0.0, 0.0]
                 if (self.flag == 1): 
-                    my_twist_angular = [0.0, 0.0, 0.5]
+                    my_twist_angular = [0.0, 0.0, 0.1]
                 elif (self.flag == 2):
-                     my_twist_angular = [0.0, 0.0, -0.5]
+                     my_twist_angular = [0.0, 0.0, -0.1]
                 
             elif (self.step[1] == False): 
                 
@@ -67,7 +67,7 @@ class RobMove(Node):
             if (self.step[2] == True): 
                 
                 my_twist_linear = [0.0, 0.0, 0.0]
-                my_twist_angular = [0.0, 0.5, 0.0]
+                my_twist_angular = [0.0, 0.1, 0.0]
                 
             elif (self.step[2] == False): 
                 
